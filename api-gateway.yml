@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+   cloud:
+    gateway:
+      routes:
+        - id: hospital_route
+          uri: http://localhost:8083
+          predicates:
+            - Path=/doctor/**
+        - id: appointment_route
+          uri: http://localhost:8084
+          predicates:
+            - Path=/appointment/**
