@@ -1,7 +1,8 @@
 spring:
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/hospitaldb
+  mongodb:
+    host: localhost
+    port: 27017
+    database: hospitaldb
 
 server:
   port: 8083
