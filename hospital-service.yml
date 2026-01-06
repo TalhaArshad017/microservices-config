@@ -7,4 +7,4 @@ spring:
 server:
   port: 8083
 jwt:
-  secret: my-super-secret-key-1234567890
+  secret: my-super-secret-key-which-is-long-enough-for-hmac-sha256-1234567890
