@@ -1,5 +1,16 @@
 server:
   port: 8080
-jwt:
-  secret: my-super-secret-key-which-is-long-enough-for-hmac-sha256-1234567890
 
+spring:
+  application:
+    name: api-gateway
+  
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+jwt:
+  secret: "my-super-secret-key-which-is-long-enough-for-hmac-sha256-1234567890"
