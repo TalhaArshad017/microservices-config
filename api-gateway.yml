@@ -12,5 +12,3 @@ spring:
           enabled: true
           lower-case-service-id: true
 
-jwt:
-  secret: my-super-secret-key-1234567890
