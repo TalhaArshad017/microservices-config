@@ -1,3 +1,5 @@
 server:
   port: 8080
+jwt:
+  secret: my-super-secret-key-which-is-long-enough-for-hmac-sha256-1234567890
 
