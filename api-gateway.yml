@@ -13,8 +13,12 @@ spring:
           uri: http://localhost:8083
           predicates:
             - Path=/doctor/**
+          filters:
+            - JwtAuthenticationFilter
             
         - id: appointment_route
           uri: http://localhost:8084
           predicates:
             - Path=/appointment/**
+          filters:
+            - JwtAuthenticationFilter
