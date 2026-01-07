@@ -1,15 +1,18 @@
 spring:
-  mongodb:
-    host: localhost
-    port: 27017
-    database: auth-db
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: auth-db
+      
+
 server:
   port: 9680
 
 jwt:
   secret: your-super-secret-key-must-be-at-least-32-chars-long-12345
-  expiration: 86400000
   issuer: http://localhost:9680
+  expiration: 86400000  
 
 logging:
   level:
