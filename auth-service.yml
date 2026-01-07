@@ -8,5 +8,10 @@ spring:
     database: auth-db
 
 jwt:
-  secret: my-super-secret-key-1234567890
+  secret: your-super-secret-key-must-be-at-least-32-chars-long-12345
   expiration: 86400000
+  issuer: http://localhost:9680
+
+logging:
+  level:
+    org.springframework: INFO
