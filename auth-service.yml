@@ -1,11 +1,10 @@
-server:
-  port: 9680
-
 spring:
   mongodb:
     host: localhost
     port: 27017
     database: auth-db
+server:
+  port: 9680
 
 jwt:
   secret: your-super-secret-key-must-be-at-least-32-chars-long-12345
@@ -15,3 +14,4 @@ jwt:
 logging:
   level:
     org.springframework: INFO
+    com.example.auth_service: DEBUG
