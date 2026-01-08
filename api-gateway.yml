@@ -28,4 +28,9 @@ spring:
             - TokenRelay=
 
 jwt:
-  secret: your-super-secret-key-must-be-at-least-32-chars-long-12345   # same as auth service
+  secret: your-super-secret-key-must-be-at-least-32-chars-long-12345   # Auth service wala exact same secret
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.security: DEBUG
