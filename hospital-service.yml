@@ -1,8 +1,6 @@
 spring:
   mongodb:
-    host: localhost
-    port: 27017
-    database: hospitaldb
+    uri: mongodb://host.docker.internal:27017/hospital
   
 server:
   port: 8083
