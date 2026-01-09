@@ -1,11 +1,10 @@
 spring:
   mongodb:
-    uri: mongodb://host.docker.internal:27017/hospital
+    host: localhost
+    port: 27017
+    database: hospitaldb
   
 server:
   port: 8083
-eureka:
-  client:
-    service-url:
-      defaultZone: http://host.docker.internal:8761/eureka
+
 
